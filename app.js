@@ -37,7 +37,7 @@ document.getElementById("hamburger").addEventListener("click", toggleNav);
 function toggleNav() {
   hamburger.classList.toggle("active");
   document.getElementById("right-nav").classList.toggle("active");
-  document.getElementById("topButton").classList.toggle("active");
+	document.getElementById("header-ip").classList.toggle("active");
 }
 
 function copyIP() {

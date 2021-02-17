@@ -12,20 +12,20 @@
       <i class="fas fa-chevron-up"></i>
     </div>
     <header id="nav-header">
-      <p>PURITYVANILLA.COM</p>
+      <p id="header-ip" class="">PURITYVANILLA.COM</p>
       <div id="hamburger" class="">
         <span></span>
         <span></span>
         <span></span>
       </div>
       <nav id="right-nav">
-        <a onClick="toggleNav()" href="#about">About</a>
-        <a onClick="toggleNav()" href="#rules">Rules</a>
-        <a onClick="toggleNav()" href="#donate">Donate</a>
-        <a onClick="toggleNav()" href="#vote">Vote</a>
+        <a onClick="toggleNav()" href="#about-scroll">About</a>
+        <a onClick="toggleNav()" href="#rules-scroll">Rules</a>
+        <a onClick="toggleNav()" href="#donate-scroll">Donate</a>
+        <a onClick="toggleNav()" href="#vote-scroll">Vote</a>
         <a onClick="toggleNav()" href="https://blog.purityvanilla.com/">Blog</a>
         <a onClick="toggleNav()" href="http://bans.purityvanilla.com/">Bans</a>
-        <a href="statistics.html">Stats</a>
+        <a href="">Statistics (Coming Soon)</a>
       </nav>
     </header>
     <div id="landing">
@@ -34,7 +34,7 @@
           <h1><span>Purity</span><br />Vanilla</h1>
           <hr />
           <h2>1.16 Vanilla Anarchy Server</h2>
-          <h2>The way Minecraft was meant<br />to be played</h2>
+          <h2>The way Minecraft was meant<br />to be played.</h2>
         </div>
         <div id="socials">
           <a target="_blank" id="discord" href="http://discord.gg/uCa9n2n"
@@ -102,37 +102,32 @@
       </div>
     </div>
     <div id="about">
+			<div id="about-scroll"></div>
       <h1>About the Server</h1>
       <div class="split">
         <p>
-          Started on 23/03/19, Purity Vanilla is a vanilla anarchy server,
-          designed to give players total freedom to play Minecraft just as the
-          developers intended. This means there are no gameplay-alterting
-          plugins, no teleportation, no playerhomes and no pre-determined
-          economy. Everything is left up to our players. Griefing and raiding
-          are permitted and there are no grief-prevention methods. Players can
-          travel thousands of blocks away and build grand empires together,
-          build huge mob farms and grinders stocking up on resources to trade
-          with others or simply roam the map looking for a fight. After just
-          over a year we have already surpassed 70,000 unique players and have a
-          rapidly growing playerbase.
+          Purity Vanilla is the largest vanilla anarchy server running on the
+          latest version of Minecraft. Having surpassed 100,000 unique players,
+          Purity has cemented itself as the place to play large-scale vanilla
+          Minecraft, as the developers intended. Our focus has always been to
+          leave everything up to our community. Players can travel millions of
+          blocks away and build grand empires together, construct huge mob
+          farms, stock up on resources to trade or simply roam the world looking
+          for a fight.
         </p>
         <div class="image first"></div>
       </div>
       <div class="split">
         <div class="image second"></div>
         <p>
-          With the rapidly growing popularity of anarchy servers like 2B2T as
-          well as the growth of YouTubers like FitMC, servers like ours have
-          skyrocketed in popularity. We aim to provide something unique within
-          the anarchy genre: an anarchy server without hacks, game-breaking
-          exploits or server-killing lag machines. This server is designed for
-          players who want to play Minecraft multiplayer in it's purest possible
-          form. This server has a large and fast-growing playerbase, constantly
-          expanding history, huge groups who have formed alliances and made
-          enemies as well as almost all other aspects of typical anarchy
-          Minecraft servers. The major difference that makes us unique is that
-          everything is achieved through vanilla gameplay.
+          Vanilla anarchy is exactly what it sounds like: anarchy without hacks.
+          Anything goes within the realm of vanilla Minecraft. The only rules we
+          have are there to ensure everyone is playing the game as intended and
+          nobody is making the server unplayable for anybody else. We have no
+          gameplay-altering plugins, no teleportation, no playerhomes and no
+          pre-determined economy. We aim to provide a unique alternative to
+          traditional anarchy servers like 2b2t, without any of the hackers,
+          game-breaking exploits and dupes or server-killing lag machines.
         </p>
       </div>
       <div class="split">
@@ -140,8 +135,8 @@
           <p>
             We set ourselves apart by updating to the latest version of the game
             as soon as it is feasible, and we remain one of the only anarchy
-            servers with a decent-sized playerbase running on the latest version
-            of Minecraft. Our high-end server hardware allows us to have far
+            servers with a large playerbase running on the latest version of
+            Minecraft. Our high-end server hardware allows us to have far
             more concurrent players on a single survival server than other
             survival servers like us, striving for the best performance possible
             without sacrificing gameplay. Join us today for a true vanilla
@@ -157,7 +152,14 @@
         <div class="image third"></div>
       </div>
     </div>
+    <div id="ip">
+      <h2>Start playing Purity Vanilla today!</h2>
+      <input readonly type="text" value="purityvanilla.com" id="ip-input" />
+      <button id="copied" onclick="copyIP()"><i class="far fa-copy"></i> Copy</button>
+      <!-- <p id="copied">IP copied to clipboard!</p> -->
+    </div>
     <div id="rules">
+			<div id="rules-scroll"></div>
       <h1>Server Rules</h1>
       <h2>
         As we are a vanilla server, we have rules in place to ensure everyone is
@@ -182,20 +184,12 @@
       </div>
       <h3>
         If evidence is found or presented of a player breaking these rules, bans
-        can be issued. A first offence will result in a 7-day ban, followed by a
-        permanent ban for the second offense. Bans may be appealed on our
-        <a target="_blank" href="http://discord.gg/uCa9n2n">Discord</a> server. If you try to
-        evade a ban by using an alternate account, that account will be banned.
-        A second offence of ban evasion will result in a permanent IP ban
+        can be issued. For more information on our ban policy and the appeals
+        process, check out <a href="https://blog.purityvanilla.com/Ban-Policy/">this page</a>.
       </h3>
     </div>
-    <div id="ip">
-      <h2>To join, connect with the following IP:</h2>
-      <input type="text" value="purityvanilla.com" id="ip-input" />
-      <button id="copied" onclick="copyIP()"><i class="far fa-copy"></i> Copy</button>
-      <!-- <p id="copied">IP copied to clipboard!</p> -->
-    </div>
     <div id="donate">
+			<div id="donate-scroll"></div>
       <div class="left">
         <h1>DONATE TO<br />PURITY VANILLA</h1>
         <p>
@@ -255,6 +249,7 @@
       </div>
     </div>
     <div id="vote">
+			<div id="vote-scroll"></div>
       <h1>VOTE FOR PURITY</h1>
       <h2>
         Voting helps out the server for very little effort on your part and

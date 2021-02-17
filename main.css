@@ -27,6 +27,10 @@ header {
   justify-content: space-between;
   align-items: center;
   transition: padding 300ms;
+  opacity: 1;
+}
+header #header-ip {
+  transition: 200ms;
 }
 header #hamburger {
   transition: 200ms;
@@ -36,7 +40,7 @@ header #hamburger span {
   height: 3px;
   width: 27px;
   margin: 5px;
-  background: #ebe8e8;
+  background: #201e1e;
   transition: 200ms;
 }
 header #hamburger.scrolling span {
@@ -196,6 +200,7 @@ header nav.active {
   position: relative;
 }
 #landing .right .slider .slides .slide .bottom {
+  width: 100%;
   background: rgba(32, 30, 30, 0.85);
   position: absolute;
   bottom: 0;
@@ -294,6 +299,10 @@ header nav.active {
   background: #ebe8e8;
 }
 
+#about #about-scroll {
+  transform: translateY(-49px);
+  position: relative;
+}
 #about h1 {
   padding: 10px 0;
   background: #403b3b;
@@ -306,7 +315,6 @@ header nav.active {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 30px;
   width: 100%;
   background: #dedcdc;
 }
@@ -314,29 +322,30 @@ header nav.active {
   background: #d7d5d5;
 }
 #about .split .image {
-  width: 48%;
+  width: 50%;
   height: 400px;
 }
 #about .split .image.first {
-  background: url("assets/about/1.jpeg");
+  background: url("assets/about/1.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 #about .split .image.second {
-  background: url("assets/about/2.jpeg");
+  background: url("assets/about/2.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 #about .split .image.third {
-  background: url("assets/about/3.jpeg");
+  background: url("assets/about/3.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 #about .split p {
-  width: 48%;
+  padding: 30px;
+  width: 50%;
   line-height: 2em;
   color: #403b3b;
   font-family: "Montserrat", sans-serif;
@@ -361,6 +370,10 @@ header nav.active {
   text-align: center;
   font-family: "Montserrat", sans-serif;
   color: #ebe8e8;
+}
+#rules #rules-scroll {
+  transform: translateY(-49px);
+  position: relative;
 }
 #rules h1 {
   font-family: "LemonMilk", sans-serif;
@@ -441,8 +454,12 @@ header nav.active {
 
 #donate {
   display: flex;
-  height: 100vh;
+  height: 80vh;
   min-height: 945px;
+}
+#donate #donate-scroll {
+  transform: translateY(-49px);
+  position: relative;
 }
 #donate .left {
   width: 50%;
@@ -479,7 +496,7 @@ header nav.active {
 #donate .right {
   width: 50%;
   padding: 30px;
-  background: url("assets/carousel/3.png");
+  background: url("assets/donate/1.png");
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -510,16 +527,16 @@ header nav.active {
   cursor: pointer;
   font-family: "Montserrat", sans-serif;
   color: #ebe8e8;
-  height: 150px;
+  height: 120px;
   font-weight: bold;
-  font-size: 56px;
+  font-size: 32px;
   padding: 0 30px;
   overflow: hidden;
 }
 #donate .right .card .hover {
   position: absolute;
-  top: 0;
-  left: 100%;
+  bottom: -100%;
+  left: 0;
   width: 100%;
   height: 100%;
   background: #434040;
@@ -529,12 +546,16 @@ header nav.active {
   font-size: 14px;
 }
 #donate .right .card:hover .hover {
-  left: 0;
+  bottom: 0;
 }
 
 #vote {
   font-family: "Montserrat", sans-serif;
   background: #ebe8e8;
+}
+#vote #vote-scroll {
+  transform: translateY(-49px);
+  position: relative;
 }
 #vote h1 {
   color: #497a95;
@@ -557,7 +578,7 @@ header nav.active {
 #vote .content {
   background: #d4d3d3;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   padding: 30px;
 }
 #vote .content section {
@@ -569,9 +590,7 @@ header nav.active {
   color: #403b3b;
 }
 #vote .content section .wrapper {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-start;
+  display: grid;
 }
 #vote .content section .wrapper .card {
   margin: 10px;
@@ -602,11 +621,19 @@ header nav.active {
   background: #497a95;
 }
 #vote .content section.links .wrapper .card a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
   color: #ebe8e8;
   text-decoration: none;
   padding: 10px;
   font-weight: bold;
   font-size: 20px;
+}
+#vote .content section.recurring .wrapper {
+  grid-template-columns: repeat(2, 1fr);
 }
 #vote .content section.recurring .wrapper .card {
   background: #828181;
@@ -638,11 +665,18 @@ footer a {
   text-decoration: none;
 }
 
-@media all and (max-width: 1665px) {
+@media all and (max-width: 1575px) {
+  #vote .content .wrapper {
+    margin: 0;
+    grid-template-columns: unset !important;
+  }
+}
+@media all and (max-width: 1185px) {
   #vote .content {
     flex-direction: column;
-    display: flex;
-    justify-content: flex-start;
+  }
+  #vote .content .wrapper {
+    justify-content: center;
   }
 }
 @media all and (max-width: 1355px) {
@@ -668,6 +702,9 @@ footer a {
   }
 }
 @media all and (max-width: 865px) {
+  header #header-ip.active {
+    opacity: 0;
+  }
   header #hamburger span {
     background: #403b3b;
   }
@@ -681,8 +718,18 @@ footer a {
     width: 100%;
     height: auto;
   }
+  #landing .left {
+    min-height: unset !important;
+    height: 100vh;
+  }
+  #landing .left .content {
+    margin: 80px 0;
+  }
   #landing .left .content h1 {
     font-size: 17vw;
+  }
+  #landing .left .content h2 {
+    font-size: 1.2em;
   }
   #landing .right {
     height: 600px;
@@ -757,13 +804,14 @@ footer a {
     font-size: 48px;
   }
   #about .split {
-    padding: 30px;
+    padding: 10px;
   }
   #about .split .image {
     display: none;
   }
   #about .split p {
     width: 100%;
+    padding: 20px;
   }
   #about .split .container {
     width: 100%;
@@ -800,6 +848,11 @@ footer a {
     width: 100%;
   }
 
+  #vote .content section .wrapper .card {
+    height: 100px;
+    width: 330px;
+    margin: 10px 0;
+  }
   #vote h1 {
     padding: 15px 30px 0;
     font-size: 48px;
@@ -807,11 +860,6 @@ footer a {
   #vote h2 {
     text-align: left;
     padding: 15px 30px;
-  }
-}
-@media all and (max-width: 455px) {
-  #vote .content section .wrapper .card {
-    height: 100px;
   }
 }
 
