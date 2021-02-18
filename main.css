@@ -134,6 +134,13 @@ header nav.active {
   font-size: 7vw;
   font-family: "LemonMilk", sans-serif;
 }
+
+/* to disable the purity spacing remove from here */
+#landing .left .content h1 span {
+	letter-spacing: 1.1vw;
+}
+/* to here */
+
 #landing .left .content hr {
   height: 3px;
   border: none;
@@ -217,25 +224,25 @@ header nav.active {
   font-size: 16px;
 }
 #landing .right .slider .slides #slide1 {
-  background: url("assets/carousel/1.png");
+  background: url("assets/carousel/1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 #landing .right .slider .slides #slide2 {
-  background: url("assets/carousel/2.png");
+  background: url("assets/carousel/2.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 #landing .right .slider .slides #slide3 {
-  background: url("assets/carousel/3.png");
+  background: url("assets/carousel/3.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 #landing .right .slider .slides #slide4 {
-  background: url("assets/carousel/4.png");
+  background: url("assets/carousel/4.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -327,7 +334,7 @@ header nav.active {
   height: 400px;
 }
 #about .split .image.first {
-  background: url("assets/about/1.png");
+  background: url("assets/about/1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -339,7 +346,7 @@ header nav.active {
   background-position: center;
 }
 #about .split .image.third {
-  background: url("assets/about/3.png");
+  background: url("assets/about/3.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -497,7 +504,7 @@ header nav.active {
 #donate .right {
   width: 50%;
   padding: 30px;
-  background: url("assets/donate/1.png");
+  background: url("assets/donate/1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -729,6 +736,13 @@ footer a {
   #landing .left .content h1 {
     font-size: 17vw;
   }
+
+	/* to disable the purity spacing remove from here */
+	#landing .left .content h1 span {
+		letter-spacing: 2.7vw;
+	}
+	/* to here */
+
   #landing .left .content h2 {
     font-size: 1.2em;
   }
