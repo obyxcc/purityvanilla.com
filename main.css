@@ -69,7 +69,7 @@ header nav {
   align-items: center;
   justify-content: flex-start;
   flex-direction: column;
-  padding: 20px;
+  padding: 0px;
   transition: 200ms;
   transform: translateX(140px);
 }
@@ -78,9 +78,10 @@ header nav a {
   text-decoration: none;
   color: #ebe8e8;
   font-size: 20px;
-  padding: 10px;
-  margin: 5px 0;
+  padding: 20px;
+  margin: 0px;
   transition: 200ms;
+  width: 100%;
 }
 header nav a:hover {
   background: #201e1e;
@@ -140,7 +141,7 @@ header nav.active {
 }
 #landing .left .content h2 {
   font-weight: 300;
-  font-size: 2em;
+  font-size: 1.8em;
 }
 #landing .left .content h2:last-of-type {
   padding-top: 60px;
@@ -149,7 +150,7 @@ header nav.active {
   position: absolute;
   bottom: 20px;
   right: 30px;
-  font-size: 28px;
+  font-size: 40px;
 }
 #landing .left #socials a {
   margin: 0 5px;
