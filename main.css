@@ -130,7 +130,7 @@ header nav.active {
 }
 #landing .left .content h1 {
   color: #403b3b;
-  font-size: 8.5vw;
+  font-size: 7vw;
   font-family: "LemonMilk", sans-serif;
 }
 #landing .left .content hr {
@@ -541,9 +541,9 @@ header nav.active {
   height: 100%;
   background: #434040;
   transition: 200ms;
-  padding: 10px;
+  padding: 20px;
   line-height: 1.5em;
-  font-size: 14px;
+  font-size: 20px;
 }
 #donate .right .card:hover .hover {
   bottom: 0;
@@ -655,7 +655,7 @@ footer {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   text-align: center;
-  padding: 100px 0;
+  padding: 20px 0 220px 0;
 }
 footer p {
   margin: 15px 0;
